@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTSITE+ </title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="log">
+                SPORTSITE+
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-picture">
+                    <img src="./images 2/racer profile 2.jpg">
+                </div>
+            </div>
+        </div>   
+    </nav>
+    <!-----------------MAIN-------------->
+    <main>
+        <div class="container">
+          <div class="left">
+            <a class="profile" href="profile.html">
+              <div class="profile-picture">
+                <img src="./images 2/racer profile 2.jpg">
+              </div>
+              <div class="handle">
+                <h4>Che Goulds</h4>
+                <p class="text-muted">@chegoulds</p>
+              </div>
+            </a>
+            <div class="sidebar">
+              <a class="menu-item active">
+                <span><i class="uil uil-home"></i></span>
+                <h3>Basecamp</h3>
+              </a>
+              <a class="menu-item" id="notifications" href="notifications.html">
+                <span><i class="uil uil-bell"><small class="notifications-count">2</small></i></span>
+                <h3>Alerts</h3>
+              </a>
+              <a class="menu-item" id="messages-notifications">
+                <span><i class="uil uil-envelope-alt"><small class="notifications-count">2</small></i></span>
+                <h3>Messages</h3>
+              </a>
+              <a class="menu-item">
+                <span><i class="uil uil-chart-line"></i></span>
+                <h3>Analytics</h3>
+              </a>
+              <a class="menu-item">
+                <span><i class="uil uil-setting"></i></span>
+                <h3>Settings</h3>
+              </a>
+            </div>
+            <label for="create-post" class="btn btn-primary">Create Post</label>
+          </div>
+            <!-- MIDDLE -->
+            <div class="middle">
+                <form class="create-post">
+                    <div class="profile-picture">
+                        <img src="./images 2/racer profile 2.jpg">
+                    </div>
+                    <input type="text" placeholder="Show the world!" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary" onclick="return validasi()">
+                </form>
+                <!-- POSTS -->
+                <div class="feeds">
+                    <!-- FEED 1 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images 2/max vers 2.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>@markopolo</h3>
+                                    <small>Gold Coast, Australia</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images 2/redbull 1.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span> 
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-alt"></i></span> 
+                            </div>
+                        </div>
+                        <div class="caption">
+                            <p><b>@markopolo </b> Some new photos I took of the race in Australia <span class="hashtag">#SuperMax</span></p>
+                        </div>
+                        <div class="comments text-muted">View comments</div>
+                    </div>
+                    <!-- FEED 2 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images 2/nascar driver.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>@alonzoz</h3>
+                                    <small>Texas, America</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images 2/nascar.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span> 
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-alt"></i></span> 
+                            </div>
+                        </div>
+                        <div class="caption">
+                            <p><b>@alonzoz </b>sunset shot. still lost tho haha </p>
+                        </div>
+                        <div class="comments text-muted">View comments</div>
+                    </div>
+                    <!-- FEED 3 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images 2/br report.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Bleacher Report</h3>
+                                    <small>Brighton, United Kingdom</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images 2/hamilton.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span> 
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-alt"></i></span> 
+                            </div>
+                        </div>
+                        <div class="caption">
+                            <p><b>Bleacher Report </b>BREAKING! Lewis Hamilton to sign with Ferrari for the 2025 season</p>
+                        </div>
+                        <div class="comments text-muted">View all 1326 comments</div>
+                    </div>
+                    <!-- FEED 4 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images 2/mazepin.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3> Racing Memes</h3>
+                                    <small> Ohio </small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images 2/mazepin 2.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span> 
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-alt"></i></span> 
+                            </div>
+                        </div>
+                        <div class="caption">
+                            <p><b>Racing Memes</b> Greates of All Time <span class="hashtag">#Motivation</span></p>
+                        </div>
+                        <div class="comments text-muted"> View comments</div>
+                    </div>
+
+
+                     <!-- FEED 5 -->
+                     <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images 2/moto gp guy.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3> @agusafianto</h3>
+                                    <small> Yogyakarta, Indonesia </small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images 2/moto gp 2.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span> 
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-alt"></i></span> 
+                            </div>
+                        </div>
+                        <div class="caption">
+                            <p><b>@agusafianto</b> hari yang bagus untuk balapan <span class="hashtag">#Anjay #Menyala</span></p>
+                        </div>
+                        <div class="comments text-muted"> View comments</div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- RIGHT -->
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4><i class="uil uil-edit"></i>
+                    </div>
+                    <!-----SEARCH BAR----->
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search Message" id="message-search">
+                    </div>
+                    <!-----MESSAGES CATEGORY----->
+                    <div class="category">
+                        <h6 class="active">Favorites</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(1)</h6>
+                    </div>
+                    <!-----MESSAGES----->
+                   
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./images 2/fat max.png">
+                        </div>
+                        <div class="message-body">
+                            <h5>@mazepindagoat</h5>
+                            <p>easiest 100 dollars </p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./images 2/lando.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>@rickowensleftshoe</h5>
+                            <p>7 new messages</p>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="main.js"></script>
+</body>
+</html>
+
